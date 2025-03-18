@@ -9,7 +9,7 @@ const Hero = () => {
             style={{ backgroundImage: "url('/src/assets/hero-food.webp')" }}>
         </div>
     
-        <div className="flex flex-col items-center justify-center relative z-10 gap-5">
+        <div className="flex flex-col items-center justify-center relative z-10 gap-5 animate-[fadeIn_2s]">
             <div>
                 <h1 className="text-6xl font-bold drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]">Order Your</h1>
                 <h1 className="text-6xl font-bold drop-shadow-[1px_1px_1px_rgba(0,0,0,0.8)]">Favourite Food Here</h1>

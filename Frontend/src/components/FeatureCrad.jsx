@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeatureCard = ({icon, title, description}) => {
     return (
-        <div className='border rounded-sm w-[15rem] px-5 py-10 flex flex-col justify-start items-center text-center mt-10 gap-2'>
+        <div className='border rounded-sm w-[15rem] px-5 py-10 flex flex-col justify-start items-center text-center gap-2'>
             <div className='border rounded-full p-3 bg-green-100 text-2xl flex items-center justify-center'>
                 {icon}
             </div>
@@ -24,13 +24,16 @@ const Features = () => {
     ];
 
     return (
-        <div className='grid grid-cols-5 gap-5'>
-            {
-                features.map((feature, index) => (
-                    <FeatureCard key={index} {...feature}/>
-                ))
-            }
-        </div>
+        <>
+            <h1 className='text-4xl text-[#222]'>Our Features 🚀</h1>
+            <div className='grid grid-cols-5 gap-5'>
+                {
+                    features.map((feature, index) => (
+                        <FeatureCard key={index} {...feature}/>
+                    ))
+                }
+            </div>
+        </>
     )
 }
 
